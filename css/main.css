@@ -219,6 +219,7 @@ h2 {
 
 .sectionNameRight {
   background: url(../img/sectionNameRight.svg) no-repeat;
+  background-position: right;
   float: right;
   height: 8rem;
 }
@@ -343,7 +344,7 @@ h2 {
 }
 
 .frozenPartySection {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -467,6 +468,13 @@ h2 {
   margin: 2rem auto 0.75rem auto;
 }
 
+#Navburg {
+  display: none;
+}
+#burger-menu {
+  display: none;
+}
+
 
 @media screen and (max-width:2000px) {
   .phoneBackground {margin-left: 10rem;}
@@ -527,7 +535,10 @@ h2 {
 }
 
 #Navburg {
-  visibility: hidden;
+  display: none;
+}
+#burger-menu {
+  display: none;
 }
   }
  
@@ -567,7 +578,10 @@ h2 {
     margin-left: 5rem;
   }
   #Navburg {
-    visibility: hidden;
+    display: none;
+  }
+  #burger-menu {
+    display: none;
   }
   }
 
@@ -609,36 +623,50 @@ h2 {
   }
   }
   @media screen and (max-width:400px) {
-    .main {width: 400px; background: url(../img/BackMobile.png);}
-    .mainPhrase {width: 300px;
+    .main {
+      width: inherit;
+      background: url(../img/BackMobile.png);
+      padding-bottom: 1rem;
+    }
+    .mainPhrase {
+      width: auto;
       font-size: 1.5rem;
       font-weight: 300;}
-    .header {width: 400px; height: 700px; background: url(../img/BackgroundOthers.png);}
-   .offer {margin: -4rem 5rem auto 5rem;}
+    .header {
+      width: inherit;
+      height: 700px;
+      background: url(../img/BackgroundOthers.png);}
+   .offer {
+     margin: -4rem 5rem auto 5rem;
+    }
     .offer h1 {
-      width: 200px;
+      width: auto;
       font-size: 2.5rem;
       font-weight: 300;}
     .offer p {
-      width:200px;
+      width:auto;
       font-size: 1rem;
     }
     .offer button {
-      width: 200px;
+      width: 100%;
       font-size: 1rem;
     }
     .mainPhrase p {
-      width: 200px;
+      width: auto;
       font-size: 2.5rem;
       font-weight: 300;}
 
 .cardBenefitWrapper {
-  display: block;
+  width: auto;
+  flex-direction: column;
 }
-.cardBenefit{
+.cardBenefit {
   width: 15rem;
-  margin-left: 3.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px 3px rgb(0 0 0 / 25%);
+}
+.cardBenefit:last-child() {
+  margin: 0px;
 }
 
 .cardBenefit h3 {
@@ -653,11 +681,12 @@ margin-left: -5rem;
 position: relative;
 }
 .animator {
-  margin-left: 3rem;
-  margin-top: 1rem;
-  margin-right: auto;
+  margin: 0px;
   float:left;
-  width: 300px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .animator h3 {
@@ -665,8 +694,10 @@ position: relative;
 }
 
 .animator p {
-  width: 300px;
+  width: auto;
   font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .onlinePartySection {
@@ -681,45 +712,46 @@ position: relative;
 
 .sectionNameRight h2 {
     padding: 0.3rem 5rem 0 5rem;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+    padding-left: 40px;
   
 }
 
 .partySection {
   margin-bottom: 0;
   display: block;
-  width: 300px;
+  width: auto;
 }
 
 .partySectionRight {
   margin-bottom: 0;
   display: block;
-  width: 300px;
+  width: auto;
 }
 
 .onlinePartySectionContent {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .partySection h3 {
   font-size: 1.5rem;
-  width: 300px;
-  margin-left: 1rem;
+  width: auto;
 }
 
 .partySectionRight h3 {
   font-size: 1.5rem;
-  width: 300px;
+  width: auto;
 }
 
 .partySection p {
-  width: 300px;
+  width: auto;
   font-size: 1rem;
   text-align: center;
 }
 
 .partySectionRight p {
-  width: 300px;
+  width: auto;
   font-size: 1rem;
   text-align: center;
 }
@@ -727,34 +759,41 @@ position: relative;
 .onlinePartySectionContentImg {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 300px;
-  margin-left: 2rem;
+  width: auto;
+  margin-left: 0;
 }
 
 .onlinePartySectionContentImgRight {
   margin-top: 0;
-  margin-left: 2.5rem;
-  width: 300px;
+  margin-left: 0;
+  width: auto;
 }
 
 .onlinePartySectionContentRight {
-  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.onlinePartySectionContent p {
+  margin-left: 0px;
 }
 
 .partySection button {
-  margin-left: 4rem;
-  width: 200px;
+  width: 70%;
   font-size: 1rem;
 }
 
 .partySectionRight button {
   margin-left: 3rem;
-  width: 200px;
+  width: 70%;
   font-size: 1rem;
 }
 
 #sec h2{
   padding-top: 2rem;
+  font-size: 2.1rem;
 }
 
 .balloonWrapper.first {
@@ -780,63 +819,60 @@ position: relative;
 }
 
 .frozenPartySection {
-  width: 400px;
+  width: auto;
   display: block;
 }
 
 .frozenPartySection h3 {
   font-size: 2rem;
-  margin-left: 2rem;
-  width: 300px;
+  width: auto;
 }
 
 .frozenPartySection img {
-  width: 330px;
-height: 200px;
-margin-left: -1rem;
+  width: auto;
+  height: 200px;
 }
 
 .frozenPartySection button {
-  margin-left: 6rem;
-  width: 200px;
+  width: 70%;
   font-size: 1rem;
+  margin: 0.5rem 4rem 1rem 4rem;
 }
 
 .formSection img {
-visibility: hidden;
-width: 0;
-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .formSection {
   display: block;
-  width: 400px;
+  width: inherit;
   margin-top: 2rem;
 }
 
 .formSection h3 {
   font-size: 2rem;
-  width: 300px;
-  margin-left: 3rem;
+  width: auto;
 }
 
 .formSection p {
-  width: 300px;
+  width: auto;
+  margin: 0 1rem 4rem 1rem;
 }
 
 .formWrapper{
-width: 400px;
+width: auto;
 margin-left: 0;
 }
 .nameAndNumber {
-  width: 300px;
+  width: auto;
   display: block;
-  margin-left: -3rem;
   margin-top: -2rem;
 }
 
 .footer {
-  width: 400px;
+  width: inherit;
 }
 
 #Navburg {
@@ -847,7 +883,7 @@ margin-left: 0;
 .nav {
   justify-content:left;
   align-items: center;
-  width: 400px;
+  width: auto;
   margin: -30px 0;
   visibility: hidden;
   height: 1px;
@@ -874,7 +910,8 @@ margin-left: 0;
   #burger-menu {
     position:fixed;
     top: 0;
-    right: -100%; 
+    right: -100%;
+    display: block;
   }
   
   #burger-menu.open {
@@ -885,8 +922,9 @@ margin-left: 0;
     width: 50px;
     height: 50px;
     background-color:rgba(113, 9, 180, 0.68);
-  margin-left: 160px;
-  margin-top: 10px;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-top: 10px;
   }
 
   .burger img {

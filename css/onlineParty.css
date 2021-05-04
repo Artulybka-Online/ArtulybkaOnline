@@ -37,6 +37,7 @@ h2 {
 .header {
   width: 100%;
   background: url(../img/BackgroundOthers.png) no-repeat;
+  background-size: cover;
   padding-top: 6.25rem;
 }
 
@@ -139,6 +140,7 @@ h2 {
 .makeOrder {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   width: 75rem;
   margin: 0 auto;
@@ -332,4 +334,83 @@ height: 450px;
 
 .menu.active {
   display: block;
+}
+
+@media screen and (max-width:400px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    background-size: cover;
+  }
+  .header,
+  .wrapper,
+  .footer,
+  .main,
+  .makeOrder,
+  .offer,
+  .jokes,
+  .makeOrder > div {
+    width: inherit;
+  }
+
+  hr,
+  h1,
+  h2,
+  p,
+  ul {
+    width: auto !important;
+  }
+
+  .makeOrder button {
+    width: 90%;
+  }
+
+  .makeOrder div {
+    padding: 1rem;
+  }
+
+  .quest,
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quest img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .readReviews {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .makeOrder p {
+    text-align: center;
+  }
+
+  #second p {
+    margin: 0 0 2rem 1rem;
+  }
+
+  .jokes h3 {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .slide.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 0 2rem 0;
+  }
+
+  .slide.visible img {
+    margin-left: 0;
+    width: 100%;
+  }
 }

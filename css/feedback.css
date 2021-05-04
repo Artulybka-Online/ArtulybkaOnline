@@ -55,6 +55,7 @@ p {
 .header {
   width: 100%;
   background: url(../img/BackgroundOthers.png) no-repeat;
+  background-size: cover;
   padding-top: 6.25rem;
 }
 
@@ -175,33 +176,48 @@ margin-top: 5rem;
   width: 4rem;
   margin: 5rem auto 0 auto;
   width: 64rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .email {
   margin-top: 2rem;
 }
 
+  .nameAndEmail {
+    width: inherit;
+  }
+
 .nameAndEmail input {
-  padding: 1rem 0 1rem 1rem;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 10px;
   background: rgba(196, 196, 196, 0.28);
+  border-radius: 10px;
+  border: none;
+  color: rgba(0, 0, 0, 0.55);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 97%;
 }
 
 .formWrapper textarea {
-  width: 69rem;
+  width: 97%;
   height: 13rem;
   font-size: 1.5rem;
   border: none;
   border-radius: 10px;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem;
   margin: 0;
   resize: none;
   font-family: GothamPro;
   background: rgba(196, 196, 196, 0.28);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -217,8 +233,7 @@ margin-top: 5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 3rem;
   text-align: center;
-  float: right;
-  margin-right: 9rem;
+  margin-right: 0;
 }
 
 .footer {
@@ -258,5 +273,99 @@ margin-top: 5rem;
 @media screen and (max-device-width:1700px) {
   .header {width: 1700px;}
   .footer {width: 1700px;}
-.container {width:1700px;}
+  .container {width:1700px;}
+}
+@media screen and (max-width:400px) {
+  .header {
+    background-size: auto;
+  }
+
+  .header,
+  .footer,
+  .container,
+  .quotePanel,
+  .formFeedback,
+  .footer,
+  .formWrapper,
+  .quoteBlocks {
+    width: inherit;
+  }
+
+  .formFeedback .button {
+    margin-right: 0;
+  }
+
+  .header,
+  .formFeedback,
+  .footer,
+  .container,
+  .quoteBlocks .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quoteBlocks,
+  .formWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quoteBlocks .quote {
+    margin: 5rem 0 0 0
+  }
+
+  .quoteBlocks .quote img,
+  .quoteBlocks .quote p {
+    margin-left: 0;
+  }
+
+  .quoteBlocks .quote p.article {
+    height: auto;
+  }
+
+  .quoteBlocks .quote p.author {
+    margin: 0 1.6rem 0 auto;
+    padding-top: 1rem;
+  }
+
+  .quoteBlocks .quote:last-child {
+    margin-bottom: 10rem;
+  }
+
+  .nameAndEmail,
+  .quoteBlocks .quote
+   {
+    width: 90%;
+  }
+
+  .quote p {
+    width: auto;
+  }
+
+  .formWrapper textarea {
+    width: 85%;
+  }
+
+  .nameAndEmail input {
+    margin: 1rem 0;
+    width: inherit;
+    padding:  1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .demoTextFeedback h1 {
+    font-size: 4.2rem;
+  }
+
+  .demoTextFeedback h1,
+  .demoTextFeedback hr,
+  .formFeedback h2,
+  .footer hr {
+    width: auto;
+  }
 }
