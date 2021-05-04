@@ -879,9 +879,16 @@ margin-left: 0;
   width: inherit;
 }
 
+#Navburg .logo {
+  margin-left: 1rem;
+}
+
 #Navburg {
   visibility: visible;
   display: flex;
+  top: 1rem;
+    position: fixed;
+    width: 100%;
 }
 
 .nav {

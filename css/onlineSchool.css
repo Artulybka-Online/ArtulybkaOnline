@@ -443,9 +443,16 @@ padding-top: 0%;
     height: auto;
   }
 
+  #Navburg .logo {
+    margin-left: 1rem;
+  }
+
   #Navburg {
     visibility: visible;
     display: flex;
+    top: 1rem;
+    position: fixed;
+    width: 100%;
   }
   
   #burger-menu {
