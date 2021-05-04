@@ -38,6 +38,36 @@
                     </div>
                   </div>
             </nav>
+            <div id="Navburg">
+                <div class="logo">
+                  <img src="./img/logoHeader.png" alt="logoHeader" />
+                </div>
+                <div class="burger">
+                  <img src="./img/burger.png" alt="" />
+                </div>
+              </div>
+              <section id="burger-menu">
+                <div class="burger-menu-header mb-5">
+                  <p>Меню</p>
+                  <div class="burger-close">
+                   <img src="./img/cross.png" alt="">
+                  </div>
+                </div>
+               <div class="burger-menu-menu">
+                  <div class="mb-4"><a href="./index.html" role="button" data-toggle="modal" data-target="#deliveryModal">Главная</a></div>
+                  <div class="mb-4"><a href="./online-party.html" role="button" data-toggle="modal" data-target="#deliveryModal">Онлайн Вечеринки</a></div>
+                  <div class="mb-4"><a href="./partyBox.html" class="mr-0" role="button" data-toggle="modal" data-target="#deliveryModal">Party Box</a></div>
+                  <div class="mb-4"><a href="./online-school.html" class="mr-0" role="button" data-toggle="modal" data-target="#deliveryModal">Онлайн Школа</a></div>
+                  <div class="mb-4"><a href="./feedback.html" class="mr-0" role="button" data-toggle="modal" data-target="#deliveryModal">Отзывы</a></div>
+                  <div class="mb-4"><a href="./costs.html" class="mr-0" role="button" data-toggle="modal" data-target="#deliveryModal">Цены</a></div>
+                </div>
+                <div>
+                  <hr class="m-0">
+                </div>
+                <div class="burger-menu-footer">
+                  <div class="mt-4"><a href="tel:+375299343428">+375 (29) 934 34 28</a></div>
+                </div>
+              </section>
             <div class="previewText">
                 <h1>Party-Box</h1>
                 <hr>
@@ -107,5 +137,37 @@
         <p>© 2021, Арт-студия “Улыбка”. Все права защищены</p>
     </footer>
     <script src="./js/menu.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#burger-menu').hide();
+    
+        $('.header .burger').on('click', function (){
+          if($('#burger-menu').hasClass("open")) {
+            $('#burger-menu').hide();
+            $('#admin-burger-menu').removeClass('open');
+            $('#burger-menu').removeClass('open');
+    
+          } else {
+            
+            $('#burger-menu').show();
+    
+            $('#burger-menu').addClass('open');
+            $('body').addClass('overflow-change');
+          }
+        })
+        $('#burger-menu .burger-close').on('click', function (){
+          $('#burger-menu').removeClass('open');
+          $('body').removeClass('overflow-change');
+        })
+        
+        $('.header .admin-burger').on('click', function (){
+          $('#admin-burger-menu').addClass('open');
+        })
+        $('#admin-burger-menu .burger-close').on('click', function (){
+          $('#admin-burger-menu').removeClass('open');
+          $('body').removeClass('overflow-change');
+        })
+        </script>
 </body>
 </html>

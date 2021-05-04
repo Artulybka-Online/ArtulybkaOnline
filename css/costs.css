@@ -8,6 +8,13 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+#Navburg {
+  display: none;
+}
+#burger-menu {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -267,6 +274,10 @@ h2 {
   .sectionText {width: 1400px;}
 }
 
+.selected-page {
+  color: #FF27A9;
+}
+
 @media screen and (max-width:400px) {
   .header {
     background-size: auto;
@@ -324,4 +335,70 @@ h2 {
   .nav {
     display: none;
   }
+
+  #Navburg {
+    visibility: visible;
+    display: flex;
+  }
+  
+  #burger-menu {
+      position:fixed;
+      top: 0;
+    }
+  
+  #burger-menu {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    background-color: seashell;
+    opacity: 90%;
+  }
+    
+    #burger-menu.open {
+      right: 0;
+      width: 70%;
+    }
+    
+    .burger {
+      width: 50px;
+      height: 50px;
+      background-color:rgba(113, 9, 180, 0.68);
+      margin-left: auto;
+      margin-right: 0.5rem;
+      margin-top: 10px;
+    }
+  
+    .burger img {
+      width: 40px;
+      height: 40px;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+    
+    .burger-close img {
+      width: 10px;
+      height: 10px;
+    }
+  
+  .burger-close img {
+    margin-top: 1rem;
+    margin-left: 6rem;
+    width: 2rem;
+    height: auto;
+  }
+  
+  .mb-4 {
+    margin:1rem;
+  }
+
+  .mb-5 {
+    display: flex;
+  }
+  
+  .mb-5 p {
+    width: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+   font-size: 1.5em;
+  }
+  
 }

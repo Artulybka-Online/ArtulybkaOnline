@@ -3,6 +3,13 @@
   src: url(../fonts/GothamPro.ttf);
 }
 
+#Navburg {
+  display: none;
+}
+#burger-menu {
+  display: none;
+}
+
 @font-face {
   font-family: GothamProBold;
   src: url(../fonts/GothamPro-Bold.ttf);
@@ -17,7 +24,12 @@ body {
 .header {
   width: 100%;
   background: url(../img/BackgroundOthers.png) no-repeat;
+  background-size: cover;
   padding-top: 6.25rem;
+}
+
+.selected-page {
+  color: #FF27A9;
 }
 
 a {
@@ -125,6 +137,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 5.1rem;
 }
 
@@ -346,4 +359,232 @@ hr {
   .header {width: 1600px;}
   .jokes {width: 1600px;}
   .footer {width: 1600px;}
+}
+
+@media screen and (max-width:400px) {
+  .header {
+    background-size: auto;
+  }
+  .header,
+  .container,
+  .footer,
+  .questBox,
+  .previewText,
+  .requestPanel,
+  .programsWrapper,
+  .carouselPrograms,
+  .buttonMoreDetailed button {
+    width: inherit;
+  }
+
+  .programsPartyBox,
+  .programsMafia {
+    width: 90%;
+  }
+
+  .carouselPrograms p,
+  .buttonMoreDetailed {
+    padding-bottom: 2rem;
+  }
+
+  .carouselPrograms p {
+    padding-bottom: 4rem;
+  }
+
+  .buttonMoreDetailed {
+    width: 95%;
+  }
+
+  .questionsOptions p {
+    padding: 0 1rem;
+  }
+
+  .questionsOptions p {
+    height: auto;
+  }
+
+  .requestPanel button {
+    width: 100%;
+  }
+
+  .questBox {
+    padding: 1rem;
+  }
+
+  .requestPanel {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .requestPanel {
+    margin-bottom: 5rem;
+  }
+
+  .questBox p {
+    height: auto;
+    font-size: 1.2rem;
+  }
+
+  .previewText h1 {
+    font-size: 3.5rem;
+  }
+
+  .readFeedback {
+    margin-right: 0;
+  }
+
+  .readFeedback img,
+  .onlineQuestsImg img,
+  .carouselPrograms img {
+    height: auto;
+    width: 100%;
+    position: static;
+    display: block;
+  }
+
+  .programsPartyBox {
+    margin-right: 0;
+  }
+
+  .informationAboutQuests {
+    padding-bottom: 1rem;
+  }
+
+  .quest3,
+  .quest2 {
+    left: 0;
+    top: 0;
+  }
+  .previewText {
+    margin-bottom: 8rem;
+  }
+
+  hr,
+  h1,
+  h2,
+  p,
+  ul {
+    width: auto !important;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .container,
+  .readFeedback,
+  .questionsOptions,
+  .main,
+  .informationAboutQuests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    margin-bottom: 5rem;
+  }
+
+  .sectionText {
+    padding-top: 2rem;
+  }
+
+  .sectionText div {
+    text-align: center;
+  }
+
+  .sectionText h2 {
+    font-size: 2.2rem;
+  }
+
+  .sectionText ul {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 5rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .programsWrapper .container h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .carouselPrograms {
+    flex-direction: column;
+  }
+
+  #Navburg {
+    visibility: visible;
+    display: flex;
+  }
+  
+  #burger-menu {
+      position:fixed;
+      top: 0;
+    }
+  
+  #burger-menu {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    background-color: seashell;
+    opacity: 90%;
+  }
+    
+    #burger-menu.open {
+      right: 0;
+      width: 70%;
+    }
+    
+    .burger {
+      width: 50px;
+      height: 50px;
+      background-color:rgba(113, 9, 180, 0.68);
+      margin-left: auto;
+      margin-right: 0.5rem;
+      margin-top: 10px;
+    }
+  
+    .burger img {
+      width: 40px;
+      height: 40px;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+    
+    .burger-close img {
+      width: 10px;
+      height: 10px;
+    }
+  
+  .burger-close img {
+    margin-top: 1rem;
+    margin-left: 6rem;
+    width: 2rem;
+    height: auto;
+  }
+  
+  .mb-4 {
+    margin:1rem;
+  }
+
+  .mb-5 {
+    display: flex;
+  }
+  
+  .mb-5 p {
+    width: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+   font-size: 1.5em;
+  }
 }

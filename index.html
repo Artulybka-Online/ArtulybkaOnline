@@ -16,7 +16,7 @@
           </div>
           <div class="menuNavbar">
             <ul>
-              <li><a href="./index.html">Главная</a></li>
+              <li><a class="selected-page" href="./index.html">Главная</a></li>
               <li><a href="./online-party.html">Программы</a></li>
               <li><a href="./feedback.html">Отзывы</a></li>
               <li><a href="./costs.html">Цены</a></li>
@@ -235,21 +235,33 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
+  $('#burger-menu').hide();
+
     $('header .burger').on('click', function (){
-      $('#burger-menu').addClass('open')
-      $('body').addClass('overflow-change')
+      if($('#burger-menu').hasClass("open")) {
+        $('#burger-menu').hide();
+        $('#admin-burger-menu').removeClass('open');
+        $('#burger-menu').removeClass('open');
+
+      } else {
+        
+        $('#burger-menu').show();
+
+        $('#burger-menu').addClass('open');
+        $('body').addClass('overflow-change');
+      }
     })
     $('#burger-menu .burger-close').on('click', function (){
-      $('#burger-menu').removeClass('open')
-      $('body').removeClass('overflow-change')
+      $('#burger-menu').removeClass('open');
+      $('body').removeClass('overflow-change');
     })
     
     $('header .admin-burger').on('click', function (){
-      $('#admin-burger-menu').addClass('open')
+      $('#admin-burger-menu').addClass('open');
     })
     $('#admin-burger-menu .burger-close').on('click', function (){
-      $('#admin-burger-menu').removeClass('open')
-      $('body').removeClass('overflow-change')
+      $('#admin-burger-menu').removeClass('open');
+      $('body').removeClass('overflow-change');
     })
     </script>
   

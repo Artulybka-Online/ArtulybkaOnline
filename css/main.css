@@ -8,6 +8,10 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+.selected-page {
+  color: #FF27A9;
+}
+
 body {
   margin: 0;
   padding: 0;
