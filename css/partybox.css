@@ -531,12 +531,12 @@ hr {
     visibility: visible;
     display: flex;
     top: 1rem;
-    position: fixed;
+    position: absolute;
     width: 100%;
   }
   
   #burger-menu {
-      position:fixed;
+      position:absolute;
       top: 0;
     }
   
