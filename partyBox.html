@@ -115,16 +115,25 @@
     <div class="programsWrapper">
         <div class="container">
             <h2>ПРОГРАММЫ</h2>
-            <div class="carouselPrograms">
-                <div class="programsPartyBox">
-                    <img src="img/partyBox4Years.png" alt="Party Box">
-                    <p>3-7 лет “Party Box”</p>
-                </div>    
-                <div class="programsMafia">
-                        <img src="img/mafia7Years.png" alt="Mafia">
-                        <p>7-13 лет “Мафия”</p>
+
+            <div class="slideshow-wrapper">
+              <!-- previous buttons -->
+              <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+              <div class="slideshow-container">      
+      
+                    <div  class="mySlides fade">
+                      <img src="img/partyBox4Years.png" alt="Pic1" />
+                      <div class="text">3-7 лет “Party Box”</div>
                     </div>
-                      </div>
+                    <div  class="mySlides fade">
+                      <img src="img/mafia7Years.png" alt="Pic2" />
+                      <div class="text">7-13 лет “Мафия”</div>
+                    </div>
+
+              </div>
+                <!-- Next buttons -->
+              <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -170,6 +179,48 @@
           $('body').removeClass('overflow-change');
           $('#burger-menu').hide();
         })
+
+        var l = [0,1];
+              showSlides(0);
+
+              // Next/previous controls
+              function plusSlides(n) {
+                showSlides(n);
+              }
+
+              // Thumbnail image controls
+              function currentSlide(n) {
+                showSlides(n);
+              }
+
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if(slides.length > 1) {                  
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                      delete slides[i].style.order;
+                  }
+
+                  arrTransform(slides, n);
+                } else {
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "block";
+                  }
+                }
+              }
+
+              function arrTransform(slides, n) {
+
+                for (i = 0; i < l.length; i++) {
+                  if(l[i] + n < 0) {l[i] = slides.length - 1;}
+                  else if(l[i] + n > slides.length - 1) {l[i] = 0;}
+                  else {l[i] = l[i] + n;}
+
+                  slides[l[i]].style.display = "block";
+                  slides[l[i]].style.order = i;
+                }
+              }
         </script>
 </body>
 </html>

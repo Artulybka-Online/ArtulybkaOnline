@@ -111,19 +111,30 @@
       <button class="more">Узнать подробнее</button>
       <section class="jokes">
         <h3>КУРСЫ</h3>
-        <div class="slider">
-          <div class="slide visible">
-            <img src="./img/spider2.png" alt="Pic1" />
-            <p>Курс джентельмена <br />с супергероем</p>
+
+        <div class="slideshow-wrapper">
+          <!-- previous buttons -->
+          <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+          <div class="slideshow-container">      
+  
+                <div  class="mySlides fade">
+                  <img src="./img/spider2.png" alt="Pic1" />
+                  <div class="text">Курс джентельмена <br />с супергероем</div>
+                </div>
+                <div  class="mySlides fade">
+                  <img src="./img/fixics.png" alt="Pic2" />
+                  <div class="text">Угадайка с фиксиками</div>
+                </div>
+                <div  class="mySlides fade" id="mineccraft">
+                  <img src="./img/elsa.png" alt="Pic3" />
+                  <div class="text">Школа этикета с Эльзой</div>
+                </div>
+              
+  
           </div>
-          <div class="slide visible">
-            <img src="./img/fixics.png" alt="Pic2" />
-            <p>Угадайка с фиксиками</p>
-          </div>
-          <div class="slide visible">
-            <img src="./img/elsa.png" alt="Pic3" />
-            <p>Школа этикета с Эльзой</p>
-          </div>
+            <!-- Next buttons -->
+          <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+        </div>
       </section>
 </section>
       <footer class="footer">
@@ -171,7 +182,50 @@
           $('body').removeClass('overflow-change');
           $('#burger-menu').hide();
         })
-        </script>
+
+
+        var l = [0,1,2];
+              showSlides(0);
+
+              // Next/previous controls
+              function plusSlides(n) {
+                showSlides(n);
+              }
+
+              // Thumbnail image controls
+              function currentSlide(n) {
+                showSlides(n);
+              }
+
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if(slides.length > 2) {                  
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                      delete slides[i].style.order;
+                  }
+
+                  arrTransform(slides, n);
+                } else {
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "block";
+                  }
+                }
+              }
+
+              function arrTransform(slides, n) {
+
+                for (i = 0; i < l.length; i++) {
+                  if(l[i] + n < 0) {l[i] = slides.length - 1;}
+                  else if(l[i] + n > slides.length - 1) {l[i] = 0;}
+                  else {l[i] = l[i] + n;}
+
+                  slides[l[i]].style.display = "block";
+                  slides[l[i]].style.order = i;
+                }
+              }
+      </script>
 
   </body>
 </html>
