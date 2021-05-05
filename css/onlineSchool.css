@@ -486,6 +486,11 @@ padding-top: 0%;
 
   .makeOrder div {
     padding: 1rem;
+    margin: 1rem;
+  }
+
+  .main {
+    padding-top: 0;
   }
 
   .quest,
@@ -498,6 +503,7 @@ padding-top: 0%;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    height: auto;
   }
 
   .readReviews {
@@ -510,7 +516,7 @@ padding-top: 0%;
   }
 
   #second p {
-    margin: 0 0 2rem 1rem;
+    margin: 0 1rem 2rem 2rem;
   }
 
 
@@ -568,7 +574,7 @@ padding-top: 0%;
       height: 50px;
       background-color:rgba(113, 9, 180, 0.68);
       margin-left: auto;
-      margin-right: 0.5rem;
+      margin-right: 1rem;
       margin-top: 10px;
     }
   
@@ -604,6 +610,10 @@ padding-top: 0%;
     margin-top: 1rem;
     margin-left: 1rem;
    font-size: 1.5em;
+  }
+  .offer p {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

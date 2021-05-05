@@ -634,6 +634,8 @@ h2 {
     }
     .mainPhrase {
       width: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
       font-size: 1.5rem;
       font-weight: 300;}
     .header {
@@ -650,6 +652,7 @@ h2 {
     .offer p {
       width:auto;
       font-size: 1rem;
+      margin-left:1rem;
     }
     .offer button {
       width: 100%;
@@ -985,8 +988,5 @@ margin-left: 0;
 html {
   overflow-x: hidden;
 }
-
-
-
 }
 

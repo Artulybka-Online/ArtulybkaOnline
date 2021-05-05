@@ -137,7 +137,7 @@ h2 {
 
 .offer p {
   margin: 3rem auto 0 auto;
-  padding: 0rem 0 7rem 0;
+  padding: 0rem 1rem 7rem 1rem;
   text-align: center;
 
   color: #ffffff;
@@ -416,10 +416,6 @@ padding-top: 0%;
     display: none;
   }
 
-  .quest p {
-    text-align: center;
-  }
-
   .offer h1 {
     font-size: 3rem;
   }
@@ -451,12 +447,24 @@ padding-top: 0%;
   }
 
   .makeOrder div {
-    padding: 1rem;
+    padding: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .makeOrder p {
+    text-align: left;
+    font-size: 1.5rem;
   }
 
   .quest {
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
+  }
+
+  .quest p {
+    text-align: left;
   }
 
   .quest img {
@@ -468,10 +476,6 @@ padding-top: 0%;
   .readReviews {
     margin-left: 0;
     margin-top: 2rem;
-  }
-
-  .makeOrder p {
-    text-align: center;
   }
 
   #second p {
