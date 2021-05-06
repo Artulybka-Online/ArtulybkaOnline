@@ -54,6 +54,7 @@ h2 {
 .main {
   width: 100%;
   background: url(../img/headerBackgroundWhite.png);
+  background-size: cover;
   padding-top: 6.25rem;
   padding-bottom: 5rem;
   margin-bottom: -7rem;
@@ -172,7 +173,8 @@ h2 {
 
 .makeOrder button {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   width: 20rem;
@@ -234,7 +236,8 @@ h2 {
 
 .jokes {
   background: url(../img/BackgroundJokes.png);
-padding-top: 0%;
+  background-size: cover;
+  padding-top: 0%;
 }
 
 .jokes h3 {
@@ -408,8 +411,27 @@ padding-top: 0%;
 }
 
 @media screen and (max-width:400px) {
-  .slideshow-wrapper {
-    display: none;
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    visibility: hidden;
+  }
+
+  .prev {
+    left: 0.5rem;
+  }
+  .next {
+    right: 0.5rem;
   }
 
   .nav {

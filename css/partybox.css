@@ -24,7 +24,7 @@ body {
 .header {
   width: 100%;
   background: url(../img/BackgroundOthers.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding-top: 6.25rem;
 }
 
@@ -353,6 +353,7 @@ hr {
 .programsWrapper {
   width: 100%;
   background: url(../img/backgroundForPrograms.png);
+  background-size: cover;
 }
 
 .carouselPrograms {
@@ -453,6 +454,28 @@ hr {
 }
 
 @media screen and (max-width:400px) {
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    visibility: hidden;
+  }
+
+  .prev {
+    left: 0.5rem;
+  }
+  .next {
+    right: 0.5rem;
+  }
   .header {
     background-size: auto;
   }
