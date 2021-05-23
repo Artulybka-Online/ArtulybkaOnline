@@ -122,7 +122,7 @@ p {
 }
 
 .demoTextFeedback {
-  padding-bottom: 12rem;
+  padding-bottom: 5rem;
 }
 
 .demoTextFeedback p {
@@ -328,8 +328,17 @@ margin-top: 5rem;
     align-items: center;
   }
 
-  .quoteBlocks .quote {
-    margin: 5rem 0 0 0
+.quoteBlocks {
+  width: 80% !important;
+}
+
+.quote {
+    margin: 5rem 0 0 0;
+    padding: 1rem;
+  }
+
+  .quote p {
+    font-size: 1rem;
   }
 
   .quoteBlocks .quote img,
@@ -347,7 +356,7 @@ margin-top: 5rem;
   }
 
   .quoteBlocks .quote:last-child {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   .nameAndEmail,
@@ -375,8 +384,36 @@ margin-top: 5rem;
   }
 
   .demoTextFeedback h1 {
-    font-size: 4.2rem;
+    font-size: 2rem;
+    margin-top: 10rem;
   }
+
+  .demoTextFeedback hr {
+    width: 80% !important;
+  }
+
+  .demoTextFeedback p {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    margin-bottom: 6rem;
+  }
+
+.formFeedback h2 {
+  font-size: 1.5rem;
+}
+
+.formFeedback {
+  padding-bottom: 7rem;
+}
+
+.button {
+  font-size:1.5rem;
+}
+
+.formWrapper {
+  width: 80%;
+  margin-top: 2rem;
+}
 
   .demoTextFeedback h1,
   .demoTextFeedback hr,
@@ -388,36 +425,31 @@ margin-top: 5rem;
   #Navburg .logo {
     margin-left: 1rem;
   }
-
+  
   #Navburg {
     visibility: visible;
     display: flex;
     top: 1rem;
-    position: absolute;
-    width: 100%;
+      position: absolute;
+      width: 100%;
   }
   
   #burger-menu {
       position:absolute;
       top: 0;
-    }
-  
-  #burger-menu {
-    margin-right: 2rem;
-    margin-top: 1rem;
     background-color: seashell;
-    opacity: 90%;
+    opacity: 92%;
+    padding-bottom: 1rem;
   }
     
     #burger-menu.open {
       right: 0;
-      width: 70%;
+      width: 60%;
     }
     
     .burger {
       width: 50px;
       height: 50px;
-      background-color:rgba(113, 9, 180, 0.68);
       margin-left: auto;
       margin-right: 0.5rem;
       margin-top: 10px;
@@ -428,19 +460,20 @@ margin-top: 5rem;
       height: 40px;
       padding-left: 5px;
       padding-top: 5px;
+      cursor: pointer;
     }
     
     .burger-close img {
-      width: 10px;
-      height: 10px;
+      margin-top: 1.75rem;
+    margin-left: 5.6rem;
+    width: 2.5rem;
+  height: auto;
+  cursor: pointer;
     }
-  
-  .burger-close img {
-    margin-top: 1rem;
-    margin-left: 6rem;
-    width: 2rem;
-    height: auto;
-  }
+
+    .burger-close img {
+      margin-right: 1rem;
+    }
   
   .mb-4 {
     margin:1rem;
@@ -448,15 +481,18 @@ margin-top: 5rem;
 
   .mb-5 {
     display: flex;
+    margin-bottom: -1rem;
   }
   
+  .mt-4 a {
+    margin-left:1rem;
+  }
+
   .mb-5 p {
     width: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-   font-size: 1.5em;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    margin-left: 0.9rem;
+    font-size: 2rem;
   }
-.demoTextFeedback {
-  margin-top: 3rem;
-}
 }

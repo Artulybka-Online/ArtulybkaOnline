@@ -212,7 +212,7 @@ hr {
 }
 
 .previewText h1 {
-  padding-top: 13rem;
+  padding-top: 15rem;
 }
 
 .previewText p {
@@ -506,7 +506,11 @@ hr {
   }
 
   .buttonMoreDetailed {
-    width: 95%;
+    width: 90%;
+  }
+
+  .buttonMoreDetailed button{
+    font-size: 1.5rem;
   }
 
   .questionsOptions p {
@@ -515,18 +519,42 @@ hr {
 
   .questionsOptions p {
     height: auto;
+    width: 80%;
+    margin: 1rem 10% 2rem 10%;
+    font-size: 1rem;
+
+  }
+
+  .readFeedback .instructionText {
+    font-size: 1rem;
+    width: 80% !important;
+    margin-left: 10%;
   }
 
   .requestPanel button {
-    width: 100%;
+    width: 80%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
   }
+
+.readReviews {
+  font-size: 1.5rem;
+}
+
+.quest2 {
+  margin-top: -8rem;
+}
+
+.quest3 {
+  margin-top: -8rem;
+}
 
   .questBox {
     padding: 1rem;
   }
 
   .requestPanel {
-    width: 90%;
+    width: 80%;
     margin-bottom: 0;
   }
 
@@ -534,13 +562,25 @@ hr {
     margin-bottom: 5rem;
   }
 
-  .questBox p {
+  .questBox p{
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .previewText h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    padding-top: 10rem;
+  }
+
+  .previewText hr {
+    width:80% !important;
+  }
+
+  .previewText p {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
   }
 
   .readFeedback {
@@ -551,7 +591,8 @@ hr {
   .onlineQuestsImg img,
   .carouselPrograms img {
     height: auto;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     position: static;
     display: block;
   }
@@ -568,9 +609,6 @@ hr {
   .quest2 {
     left: 0;
     top: 0;
-  }
-  .previewText {
-    margin-bottom: 8rem;
   }
 
   hr,
@@ -631,6 +669,7 @@ hr {
   .programsWrapper .container h2 {
     font-size: 2rem;
     padding-bottom: 2rem;
+    padding-top: 3rem;
   }
 
   .carouselPrograms {
@@ -640,36 +679,56 @@ hr {
   #Navburg .logo {
     margin-left: 1rem;
   }
-
+  
   #Navburg {
     visibility: visible;
     display: flex;
     top: 1rem;
-    position: absolute;
-    width: 100%;
+      position: absolute;
+      width: 100%;
   }
   
-  #burger-menu {
-      position:absolute;
-      top: 0;
+  .nav {
+    justify-content:left;
+    align-items: center;
+    width: auto;
+    margin: -30px 0;
+    visibility: hidden;
+    height: 1px;
+  
+  }
+  
+  .logo {
+    margin-left: 1rem;
+    height: 100px;
+  }
+  
+  .menuNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menuNavbar ul {
+    display: block;
+    width: 100%;
     }
   
-  #burger-menu {
-    margin-right: 2rem;
-    margin-top: 1rem;
-    background-color: seashell;
-    opacity: 90%;
-  }
+  
+    #burger-menu {
+      position:absolute;
+      top: 0;
+      right: -100%;
+      display: block;
+    }
     
     #burger-menu.open {
       right: 0;
-      width: 70%;
     }
     
     .burger {
       width: 50px;
       height: 50px;
-      background-color:rgba(113, 9, 180, 0.68);
       margin-left: auto;
       margin-right: 0.5rem;
       margin-top: 10px;
@@ -680,32 +739,47 @@ hr {
       height: 40px;
       padding-left: 5px;
       padding-top: 5px;
+      cursor: pointer;
     }
     
     .burger-close img {
-      width: 10px;
-      height: 10px;
+      margin-top: 1.75rem;
+      margin-left: 5.6rem;
+      width: 2.5rem;
+    height: auto;
+    cursor: pointer;
+    }
+    .body {
+      width: 400px;
     }
   
-  .burger-close img {
-    margin-top: 1rem;
-    margin-left: 6rem;
+  .mb-5 {
+    display: flex;  
+    margin-bottom: -1rem;
+  }
+  
+  .mb-5 p {
     width: 2rem;
-    height: auto;
+      margin-top: 1.8rem;
+      margin-left: 0.9rem;
+      font-size: 2rem;
+  }
+  
+  #burger-menu {
+    background-color: seashell;
+    opacity: 92%;
+    padding-bottom: 1rem;
+  }
+  
+  .mt-4 a {
+    margin-left:1rem;
   }
   
   .mb-4 {
     margin:1rem;
   }
-
-  .mb-5 {
-    display: flex;
-  }
   
-  .mb-5 p {
-    width: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
-   font-size: 1.5em;
+  html {
+    overflow-x: hidden;
   }
 }

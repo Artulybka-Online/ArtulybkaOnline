@@ -61,7 +61,7 @@
           <div class="text">
             <h1>Детский Аниматор Онлайн</h1>
             <p>Развлечения и поздравления для детей в любую точку мира!</p>
-            <button>Заказать программу</button>
+            <button onclick="order()">Заказать программу</button>
           </div>
         </div>
       </header>
@@ -142,8 +142,8 @@
             class="onlinePartySectionContentImgRight"
           />
           <div class="onlinePartySectionContentRight">
-              <h3>Квест “С Днём Рождения!”: 3-7 лет.</h3>
-              <h3> Квест "Мафия" для взрослых детей (от 7 до 13 лет).</h3>
+              <h3>Квест “С Днём Рождения!” (3-7 лет)</h3>
+              <h3> Квест "Мафия" (7-13 лет)</h3>
             <p> Увлекательные задания на цветных шаблонах,
               которые вы прячете дома. Прохождение квеста сопровождается
               видеообращениями персонажей с помощью QR-кодов. Офлайн и онлайн
@@ -266,6 +266,14 @@
       $('#burger-menu').hide();
     })
     </script>
-  
+  <script type="text/javascript">
+  function order(){
+alert("hello");
+(function(w,d,u){
+var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+})(window,document,'https://cdn.bitrix24.ru/b12748788/crm/site_button/loader_1_o5..');
+  }
+  </script>
   </body>
 </html>
