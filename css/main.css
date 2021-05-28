@@ -496,10 +496,10 @@ h2 {
 }
 
 #Navburg {
-  display: none;
+  display: none !important;
 }
 #burger-menu {
-  display: none;
+  display: none !important;
 }
 
 .partySection img.onlinePartySectionContentImg,
@@ -547,26 +547,26 @@ h2 {
   }
 
 
-.onlinePartySectionContentImg
-{
-  margin-left: 15rem;
-}
-
-.onlinePartySectionContentImg {
-  margin-left: 2rem;
-}
-
-.onlinePartySectionContentImgRight {
-  margin-left: 5rem;
-}
-
-#Navburg {
-  display: none !important;
-}
-#burger-menu {
-  display: none !important;
-}
+  .onlinePartySectionContentImg
+  {
+    margin-left: 15rem;
   }
+
+  .onlinePartySectionContentImg {
+    margin-left: 2rem;
+  }
+
+  .onlinePartySectionContentImgRight {
+    margin-left: 5rem;
+  }
+
+  #Navburg {
+    display: none !important;
+  }
+  #burger-menu {
+    display: none !important;
+  }
+}
 
   @media screen and (max-width:1200px) {
     .nav {
@@ -606,7 +606,7 @@ h2 {
     #burger-menu {
       display: none !important;
     }
-  }
+}
 
   @media screen and (max-width:940px) {
     .partySection img.onlinePartySectionContentImg, .partySectionRight img.onlinePartySectionContentImgRight {
