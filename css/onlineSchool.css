@@ -31,7 +31,7 @@ a {
 h1 {
   font-family: GothamProBold;
   font-size: 4.5rem;
-  width: 54rem;
+  width: 100%;
   font-weight: 900;
   color: #ffffff;
 }
@@ -81,7 +81,7 @@ h2 {
 /* Slideshow container */
 .slideshow-container{
   position: relative;
-  margin: auto;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,7 +94,7 @@ h2 {
   align-items: center;
   flex-direction: row;
   margin: 0;
-  width: inherit;
+  width: 100%;
   padding: 0 0 6rem 0;
 }
 /* Hide the images by default */
@@ -108,20 +108,20 @@ h2 {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 5px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 50%;
   user-select: none;
+  width: 25px;
+  height: 25px;
+  text-align: center;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  
   margin-right: auto;
 }
 
@@ -155,8 +155,9 @@ h2 {
 
 .fade,
 .fade img {
-  max-width: 310px;
-  height: 377px;
+  width: 310px !important;
+  display: block;
+  height: 377px !important;
 }
 
 @-webkit-keyframes fade {
@@ -215,20 +216,20 @@ h2 {
   border: 0;
   background: white;
   height: 1px;
-  width: 35rem;
+  width: 100%;
   margin: 0 auto;
 }
 
 .offer p {
-  margin: 3rem auto 0 auto;
-  padding: 0rem 0 7rem 0;
+  margin: 3rem auto;
+  padding: 0;
   text-align: center;
 
   color: #ffffff;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 2rem;
-  width: 62rem;
+  width: 100%;
 }
 
 .makeOrder {
@@ -236,16 +237,16 @@ h2 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 75rem;
   margin: 0 auto;
 }
 
 .makeOrder div {
-  width: 40rem;
+  width: 60% !important;
   padding: 3rem;
   background: white;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 .makeOrder p {
@@ -258,14 +259,14 @@ h2 {
   margin-top: 6rem;
   display: flex;
   justify-content: center;
-  width: 20rem;
+  width: max-content;
   color: #7109b4;
   background: #f9f0ff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: 0;
   font-size: 2rem;
-  padding: 1rem 0;
+  padding: 10px 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .readReviews {
@@ -273,8 +274,8 @@ h2 {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: underline;
-  margin-left: 25rem;
-  margin-top: -2.5rem;
+  margin-left: 0;
+  margin-top: 8rem !important;
 }
 
 .readReviews a {
@@ -283,40 +284,49 @@ h2 {
 .quest {
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     margin-top: 6rem;
 }
 
+#first p{
+  margin-top: 0;
+  margin-left: 0;
+  width: 35%;
+}
+
 .quest p {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  width: 40rem;
+  margin: auto;
+  width: 50%;
   font-size: 2rem;
 }
 
 .quest img {
-  width: 40rem;
-  height: 30rem;
+  width: 45%;
+  height: 100%;
 }
 .firstimg {
-  margin-left: 5rem;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 .secimg {
-  margin-left: 1rem;
-  margin-right: 5rem;
+  width: 55%;
+  margin: 0;
 }
 .quest span {
   color: #7109b4;
 }
 
-#second p {
-  margin-left: 12rem;
+#second img {
+  width: 55%;
 }
 
-#second img {
-  height: 20rem;
+#second div {
+  width: 40%;
+}
+
+#second p {
+  width: 100%;
 }
 
 .makeOrder span {
@@ -394,7 +404,7 @@ padding-top: 0%;
 }
 
 .footer hr {
-  width: 76rem;
+  width: 80%;
   border: 0;
   background: white;
   height: 1px;
@@ -448,39 +458,202 @@ padding-top: 0%;
   display: block;
 }
 
-@media screen and (max-device-width:1700px) {
-  .main {width: 1700px;}
-  .header {width: 1700px;}
-  .jokes {width: 1700px;}
-  .footer {width: 1700px;}
+.selected-page {
+  color: #FF27A9;
 }
 
-@media screen and (max-width:400px) {
+.firstLesson {
+  text-align: center;
+  font-size: 48px;
+  margin: 5rem 0;
+  color: #FF27A9;
+}
+
+@media screen and (max-width:1200px) {
+  .nav {
+    width: 95%;
+  }
+
+  .readReviews {
+    margin-top: 2rem !important;
+  }
+}
+
+@media screen and (max-width:872px) {
+  .readReviews {
+    margin-left: 20rem;
+  }
+  .slideshow-container .fade,
+  .slideshow-container .fade img {
+    width: 260px !important;
+    display: block;
+    height: 277px !important;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #Navburg .logo {
+    margin-left: 1rem;
+    height: 100px;
+  }
+
+  .burger {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+  }
+
+  #Navburg {
+    visibility: visible;
+    display: flex;
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+  }
+
+  .burger img {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .next {
+    margin-right: auto;
+  }
+  
+  .prev {
+    margin-left: auto;
+  }
+  .readReviews {
+    margin-top: 1rem !important;
+    width: 100% !important;
+  }
+
+  #Navburg .logo {
+    margin-left: 1rem;
+  }
+  
+  #Navburg {
+    visibility: visible;
+    display: flex !important;
+    top: 1rem;
+      position: absolute;
+      width: 100%;
+  }
+
+  #burger-menu {
+    position:absolute;
+    top: 0;
+    right: -100%;
+    display: block !important;
+  }
+  
+  #burger-menu.open {
+    right: 0;
+  }
+  
+  .burger {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .burger img {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  
+  .burger-close img {
+    margin-top: 1.75rem;
+    margin-left: 5.6rem;
+    width: 2.5rem;
+  height: auto;
+  cursor: pointer;
+  }
+
+  .mb-5 {
+    display: flex;  
+    margin-bottom: -1rem;
+  }
+  
+  .mb-5 p {
+    width: 2rem;
+      margin-top: 1.8rem;
+      margin-left: 0.9rem;
+      font-size: 2rem;
+  }
+  
+  #burger-menu {
+    background-color: seashell;
+    opacity: 92%;
+    padding-bottom: 1rem;
+  }
+  
+  .mt-4 a {
+    margin-left:1rem;
+  }
+  
+  .mb-4 {
+    margin:1rem;
+  }
+}
+
+@media screen and (max-width:705px) {
   .nav {
     display: none;
   }
 
   .prev, .next {
     cursor: pointer;
-    position: relative;
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 0;
+    padding: 5px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
-    visibility: hidden;
+    width: 25px;
+    height: 25px;
+    text-align: center;
   }
 
-  .prev {
-    left: 0.5rem;
-  }
   .next {
-    right: 0.5rem;
+    margin-right: auto;
+  }
+  
+  .prev {
+    margin-left: auto;
   }
 
   .header {
@@ -559,28 +732,26 @@ padding-top: 0%;
     height: auto;
   }
 
-.quest p{
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1rem;
-}
-
-.quest {
-  margin-top: 2.5rem;
-}
-
-.more{
-  width: 80%;
-  font-size: 1.5rem;
-  margin:2rem;
-}
-
-  .readReviews {
-    margin-left: 0;
-    margin-top: 2rem;
-    font-size: 1.5rem;
+  .quest p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
   }
 
+  .quest {
+    margin-top: 2.5rem;
+  }
+
+  .more{
+    width: 80%;
+    font-size: 1.5rem;
+    margin:2rem;
+  }
+
+  .readReviews {
+    font-size: 1.5rem;
+    margin: 1rem 0 !important;
+  }
 
   #second p {
     margin: 0 1rem 2rem 2rem;
@@ -719,8 +890,33 @@ padding-top: 0%;
   html {
     overflow-x: hidden;
   }
+
+  .firstLesson {
+    font-size: 32px;
+  }
 }
 
-.selected-page {
-  color: #FF27A9;
+@media screen and (max-width:369px) {
+  #second div {
+    width: 100%;
+  }
+
+  .slideshow-wrapper {
+    justify-content: center;
+  }
+  
+  .slideshow-container .fade,
+  .slideshow-container .fade img {
+    width: 260px !important;
+    display: block;
+    height: 277px !important;
+  }
+
+  .prev, .next {
+    display: none;
+  }
+
+  .firstLesson {
+    font-size: 22px;
+  }
 }

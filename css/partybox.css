@@ -4,10 +4,10 @@
 }
 
 #Navburg {
-  display: none;
+  display: none !important;
 }
 #burger-menu {
-  display: none;
+  display: none !important;
 }
 
 @font-face {
@@ -20,11 +20,25 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: GothamPro;
+  width: 100%;
+  height: 100%;
 }
+
+.header,
+  .wrapper,
+  .footer,
+  .main,
+  .makeOrder,
+  .offer,
+  .jokes,
+  .makeOrder > div {
+    width: 100% !important;
+  }
+
 .header {
   width: 100%;
   background: url(../img/BackgroundOthers.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding-top: 6.25rem;
 }
 
@@ -114,8 +128,9 @@ a {
 
 .fade,
 .fade img {
-  max-width: 310px;
-  height: 377px;
+  width: 310px !important;
+  display: block;
+  height: 377px !important;
 }
 
 @-webkit-keyframes fade {
@@ -133,6 +148,7 @@ h1 {
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
   padding-top: 10rem;
 }
 
@@ -148,13 +164,17 @@ h2 {
 }
 
 hr {
-  width: 35rem;
+  width: 100%;
+  margin: 0;
   margin-bottom: 1.6rem;
+  border: 0;
+  background: white;
+  height: 1px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .container {
-  width: 1300px;
-  margin: 0px auto;
+  width: 100%;
 }
 
 .nav {
@@ -237,11 +257,13 @@ hr {
   border-radius: 10px;
   padding: 2.4rem 1.8rem;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 55%;
 }
 
 .questBox p {
-  width: 56rem;
-  height: 9.25rem;
+  width: 100%;
+  height: 100%;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -269,6 +291,7 @@ hr {
 .informationAboutQuests {
   display: flex;
   padding-bottom: 9rem;
+  width: 100%;
 }
 
 .onlineQuests {
@@ -276,7 +299,11 @@ hr {
 }
 
 .readFeedback {
-  margin-right: 7.2rem;
+  width: 50%;
+}
+
+.readFeedback img {
+  width: 100%;
 }
 
 .readReviews {
@@ -293,7 +320,7 @@ hr {
 
 .readFeedback .instructionText {
   font-family: GothamPro;
-  width: 40rem;
+  width: 90%;
   font-size: 2.1rem;
   margin-left: 1rem;
 }
@@ -302,9 +329,13 @@ hr {
   color: #7109b4;
 }
 
+.questionsOptions {
+  width: 50%;
+}
+
 .questionsOptions p {
-  width: 41rem;
-  height: 13rem;
+  width: 100%;
+  height: auto;
   font-size: 2.1rem;
   margin-top: 5rem;
 }
@@ -315,21 +346,23 @@ hr {
 
 .onlineQuestsImg {
   position: relative;
+  width: 100%;
 }
 .onlineQuestsImg img {
   position: absolute;
   border-radius: 10px;
+  width: 50%;
 }
 
 .quest2 {
   z-index: 1px;
-  left: 9.3rem;
-  top: 10rem;
+  left: 25%;
+  top: 7rem;
 }
 
 .quest3 {
   z-index: 2px;
-  left: 20rem;
+  left: 45%;
   top: 3rem;
 }
 
@@ -390,7 +423,7 @@ hr {
 }
 
 .footer hr {
-  width: 76rem;
+  width: 100%;
   border: 0;
   background: white;
   height: 1px;
@@ -447,34 +480,187 @@ hr {
    margin-right: 5rem;
 }
 
-@media screen and (max-device-width:1600px) {
-  .header {width: 1600px;}
-  .jokes {width: 1600px;}
-  .footer {width: 1600px;}
+@media screen and (max-device-width:1300px) {
+  .nav {
+    width: 95%;
+  }
+  .questBox {
+    width: 80%;
+  }
+  .questionsOptions .onlineQuestsImg img {
+    width: 45%;
+  }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:872px) {
+  .slideshow-container .fade,
+  .slideshow-container .fade img {
+    width: 260px !important;
+    display: block;
+    height: 277px !important;
+  }
+
+  .questionsOptions .onlineQuestsImg img {
+    width: 45%;
+    margin: auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #Navburg .logo {
+    margin-left: 1rem;
+    height: 100px;
+  }
+
+  .burger {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+  }
+
+  #Navburg {
+    visibility: visible;
+    display: flex !important;
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+  }
+
+  .burger img {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
   .prev, .next {
     cursor: pointer;
-    position: relative;
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 0;
+    padding: 5px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
-    visibility: hidden;
+    width: 25px;
+    height: 25px;
+    text-align: center;
   }
 
-  .prev {
-    left: 0.5rem;
-  }
   .next {
-    right: 0.5rem;
+    margin-right: auto;
+  }
+  
+  .prev {
+    margin-left: auto;
+  }
+
+  #Navburg .logo {
+    margin-left: 1rem;
+  }
+  
+  #Navburg {
+    visibility: visible;
+    display: flex !important;
+    top: 1rem;
+      position: absolute;
+      width: 100%;
+  }
+
+  #burger-menu {
+    position:absolute;
+    top: 0;
+    right: -100%;
+    display: block !important;
+  }
+  
+  #burger-menu.open {
+    right: 0;
+  }
+  
+  .burger {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .burger img {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  
+  .burger-close img {
+    margin-top: 1.75rem;
+    margin-left: 5.6rem;
+    width: 2.5rem;
+  height: auto;
+  cursor: pointer;
+  }
+
+  .mb-5 {
+    display: flex;  
+    margin-bottom: -1rem;
+  }
+  
+  .mb-5 p {
+    width: 2rem;
+      margin-top: 1.8rem;
+      margin-left: 0.9rem;
+      font-size: 2rem;
+  }
+  
+  #burger-menu {
+    background-color: seashell;
+    opacity: 92%;
+    padding-bottom: 1rem;
+  }
+  
+  .mt-4 a {
+    margin-left:1rem;
+  }
+  
+  .mb-4 {
+    margin:1rem;
+  }
+}
+
+@media screen and (max-width:705px) {
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+
+  .next {
+    margin-right: auto;
+  }
+  
+  .prev {
+    margin-left: auto;
   }
   .header {
     background-size: auto;
@@ -570,10 +756,6 @@ hr {
   .previewText h1 {
     font-size: 2rem;
     padding-top: 10rem;
-  }
-
-  .previewText hr {
-    width:80% !important;
   }
 
   .previewText p {
@@ -682,7 +864,7 @@ hr {
   
   #Navburg {
     visibility: visible;
-    display: flex;
+    display: flex !important;
     top: 1rem;
       position: absolute;
       width: 100%;
@@ -719,7 +901,7 @@ hr {
       position:absolute;
       top: 0;
       right: -100%;
-      display: block;
+      display: block !important;
     }
     
     #burger-menu.open {
@@ -781,5 +963,22 @@ hr {
   
   html {
     overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width:369px) {
+  .slideshow-wrapper {
+    justify-content: center;
+  }
+  
+  .slideshow-container .fade,
+  .slideshow-container .fade img {
+    width: 260px !important;
+    display: block;
+    height: 277px !important;
+  }
+
+  .prev, .next {
+    display: none;
   }
 }

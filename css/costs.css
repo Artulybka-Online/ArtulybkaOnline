@@ -140,14 +140,14 @@ h2 {
 
 .cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80rem;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
 }
 
 .card {
-  width: 22rem;
+  width: 25%;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -246,7 +246,7 @@ h2 {
 }
 
 .footer hr {
-  width: 76rem;
+  width: 100%;
   border: 0;
   background: white;
   height: 1px;
@@ -270,17 +270,22 @@ h2 {
 }
 
 @media screen and (max-width:1400px) {
-  .header {width: 1400px;}
-  .jokes {width: 1400px;}
-  .footer {width: 1400px;}
-  .sectionText {width: 1400px;}
+  .header {width: 100%;}
+  .jokes {width: 100%;}
+  .footer {width: 100%;}
+  .sectionText {width: 100%;}
+}
+@media screen and (max-width:1200px) {
+  .nav {
+    width: 95%;
+  }
 }
 
 .selected-page {
   color: #FF27A9;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:872px) {
   .header {
     background-size: auto;
   }
@@ -303,13 +308,15 @@ h2 {
 
   .cards {
     flex-direction: column;
-    width: 80% !important;
+    width: 100% !important;
+    align-items: center;
   }
   
   .card {
     width: 80%;
     margin-bottom: 2rem;
-      margin-top: 2rem;
+    margin-top: 2rem;
+    border: 1px solid rgba(0,0,0,0.1);
   }
 .card h3 {
   padding-left: 1rem;

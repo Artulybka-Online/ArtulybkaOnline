@@ -226,24 +226,32 @@
 
         function SLider (el, options) {
               var index = -1;
-              var visibleC = options.count || 4;
+              var visibleC = 0;
 
               var slides = el.find(".mySlides");
               var slidesL = slides.length;
 
-              var maxSliveVisible = options.maxCount || 4;
-              var minSliveVisible = options.minCount || 1;
-              var minPageWidth = options.minPageWidth || 400;
               var __window = $( window );
               var currentTimeout;
-  
-              __window.resize(function() {
-                if(__window.width() > minPageWidth) {
-                  if(getVisibleCount() != maxSliveVisible) changeVisibleCount(maxSliveVisible);
-                } else {
-                  if(getVisibleCount() != minSliveVisible) changeVisibleCount(minSliveVisible);
+              var changeVisibleImage = function() {
+                debugger;
+                if(__window.width() < 734) {
+                  changeVisibleCount(1);
+                  return;
                 }
-              });
+                if(__window.width() < 1118) {
+                  changeVisibleCount(2);
+                  return;
+                }
+                if(__window.width() < 1474) {
+                  changeVisibleCount(3);
+                  return;
+                }
+                changeVisibleCount(4);
+              };
+  
+              __window.load(changeVisibleImage);
+              __window.resize(changeVisibleImage);
 
               var prev =  el.find('.prev');
               var next = el.find('.next');
@@ -253,8 +261,6 @@
               next.on("click", function() {
                 showSlides(1);
               });
-
-              showSlides(1);
 
               function changeVisibleCount (c) {
                 visibleC = c > slidesL ? slidesL : c;
@@ -303,23 +309,9 @@
                 changeVisibleCount: changeVisibleCount
               };
         }
+        var slider = SLider($('.slideshow-wrapper'));
 
-        if($(window).width() > 400) {
-          slider = SLider($('.slideshow-wrapper'), {
-            count: 4,
-            maxCount: 4,
-            minCount: 1,
-            minPageWidth: 400
-          });
-        } else {
-          slider = SLider($('.slideshow-wrapper'), {
-            count: 1,
-            maxCount: 4,
-            minCount: 1,
-            minPageWidth: 400
-          });
-        }
-        </script>
+  </script>
 
 </body>
 </html>

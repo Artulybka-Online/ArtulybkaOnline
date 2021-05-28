@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
 }
 
+
 a {
   text-decoration: none;
   color: black;
@@ -38,7 +39,7 @@ h2 {
 }
 
 .container {
-  width: 1340px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -54,6 +55,7 @@ h2 {
   background: url(../img/headerBackgroundWhite.png);
   padding-top: 6.25rem;
   padding-bottom: 5rem;
+  background-size: cover;
 }
 
 .nav {
@@ -116,18 +118,19 @@ h2 {
   display: flex;
   text-align: center;
   padding-bottom: 21rem;
-    margin-left: 17rem;
+  width: 100%;
 }
 
 .offer h1 {
   margin-top: 20rem;
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+  width: 95%;
 }
 
 .offer p {
   font-size: 2rem;
   color: #ffffff;
-  width: 31.25rem;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -137,17 +140,25 @@ h2 {
   margin-top: 3rem;
   background: rgba(255, 39, 169, 0.61);
   border-radius: 10px;
-  width: 22rem;
+  width: 45%;
   font-size: 2rem;
   color: #ffffff;
   padding: 1rem 0;
   border: 0;
 }
 
+.animator-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
 .mainPhrase {
   text-align: center;
   font-size: 2rem;
-  width: 75rem;
+  width: 95%;
   margin: -5rem auto 0 auto;
   color: rgba(113, 9, 180, 0.68);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -155,13 +166,23 @@ h2 {
 
 .cardBenefitWrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 10px auto 0 auto;
+}
+
+.partySection img {
+  width: auto;
+    margin-left: auto;
+    margin-right: 5px;
+    height: fit-content;
 }
 
 .cardBenefit {
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 11px 4px rgb(0 0 0 / 25%);
+  border: solid 1px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  width: 25%;
 }
 
 .cardBenefit h3 {
@@ -183,34 +204,34 @@ h2 {
 
 .phoneBackground {
   background: url(../img/Phone.png) no-repeat;
-  width: 34rem;
+  background-size: contain;
+  width: 40%;
   height: 52rem;
-  position: absolute;
 }
 
 .animator {
-  float: right;
-  width: 54rem;
+  width: 55%;
   margin-top: 7rem;
-  margin-right: 15rem;
 }
 
 .animator h3 {
+  margin-top: 10px;
   text-align: center;
   font-size: 3.5rem;
   color: #7109b4;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
 }
 
 .animator p {
   font-size: 2rem;
   text-align: center;
-  width: 52rem;
+  width: 100%;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .onlinePartySection {
-  margin-top: 55rem;
+  margin-top: 25px;
 }
 
 #school {
@@ -245,7 +266,8 @@ h2 {
 }
 
 .onlinePartySectionContent {
-  margin-left: 5rem;
+  height: auto;
+  width: 50%;
 }
 
 .onlinePartySectionContent button {
@@ -253,7 +275,7 @@ h2 {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  width: 23rem;
+  width: 60%;
   color: #7109b4;
   background: #f9f0ff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -265,7 +287,6 @@ h2 {
 }
 
 .onlinePartySectionContent p {
-  width: 50rem;
   text-align: left;
   font-size: 2rem;
   margin-left: 1rem;
@@ -277,7 +298,6 @@ h2 {
 }
 
 .onlinePartySectionContent h3 {
-  width: 60rem;
   text-align: center;
   font-size: 2rem;
 }
@@ -295,6 +315,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-top: 11rem;
+  width: 100%;
 }
 
 .onlinePartySectionContentRight {
@@ -303,13 +324,13 @@ h2 {
 }
 
 .onlinePartySectionContentRight p {
-  width: 62.5rem;
+  width: 100%;
   text-align: left;
   font-size: 2rem;
 }
 
 .onlinePartySectionContentRight h3 {
-  width: 60rem;
+  width: 100%;
   text-align: center;
   font-size: 2rem;
 }
@@ -342,7 +363,7 @@ h2 {
 
 .balloonWrapper p {
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 1rem;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -413,6 +434,8 @@ h2 {
   font-size: 1.5rem;
   padding: 1rem 0 1rem 1rem;
   margin: 1rem;
+  margin: 1rem 0;
+  width: 43%;
 }
 
 .formWrapper textarea {
@@ -449,7 +472,7 @@ h2 {
 }
 
 .footer hr {
-  width: 76rem;
+  width: 100%;
   border: 0;
   background: white;
   height: 1px;
@@ -479,57 +502,56 @@ h2 {
   display: none;
 }
 
+.partySection img.onlinePartySectionContentImg,
+.partySectionRight img.onlinePartySectionContentImgRight{
+  width: 30%;
+  height: fit-content;
+}
+
+.balloonWrapper.first {
+  margin-left: 5%;
+  margin-top: 7rem;
+}
+.balloonWrapper.second {
+  margin-left: 10%;
+}
+.balloonWrapper.third {
+  margin-left: 15%;
+}
+.balloonWrapper.forth {
+  margin-left: 20%;
+}
+
 
 @media screen and (max-width:2000px) {
-  .phoneBackground {margin-left: 10rem;}
-  .cardBenefit {width: 26rem;}
+  .cardBenefit {width: 25%;}
   .cardBenefitWrapper {
-    width: 95rem;
-    margin: 5.125rem auto 0 auto;
+    width: 100%;
+    max-width: 95rem;
+    margin-top: 10px;
   }
   .formWrapper img {
-    width: 20rem;
-    height: 20rem;
-    margin-left: 3rem;
+    width: 15%;
+    height: 15%;
   }
   .formSection p {
-    width: 50rem;
+    width: 100%;
     margin: 0 auto 4rem auto;
   }
   
   .formWrapper {
-    width: 100rem;
-    margin: 0 auto;
+    margin: 0 ;
   }
   .formWrapper {
-    width: 80rem;
-    margin-left: 12rem;
+    width: 100%;
   }
-  .balloonWrapper.first {
-    margin-left: 20rem;
-    margin-top: 7rem;
-  }
-  .balloonWrapper.second {
-    margin-left: 30rem;
-  }
-  .balloonWrapper.third {
-    margin-left: 40rem;
-  }
-  .balloonWrapper.forth {
-    margin-left: 50rem;
-  }
+
 
 .onlinePartySectionContentImg
 {
   margin-left: 15rem;
 }
-.onlinePartySectionContent {
-  margin-left: 10rem;
-}
 
-.formWrapper {
-  margin-left: 17%;
-}  
 .onlinePartySectionContentImg {
   margin-left: 2rem;
 }
@@ -539,41 +561,38 @@ h2 {
 }
 
 #Navburg {
-  display: none;
+  display: none !important;
 }
 #burger-menu {
-  display: none;
+  display: none !important;
 }
   }
- 
-  
-@media screen and (max-device-width:1800px) {
-  .phoneBackground {margin-left: 1rem;}
-  .main {width: 1900px;}
-  .header {width: 1800px;}
-  .formWrapper img { width: 15rem; height: 15rem; margin-left: 3rem;}
-  .cardBenefit {width: 20rem;}
+
+  @media screen and (max-width:1200px) {
+    .nav {
+      width: 95%;
+    }
+
+    .frozenPartySection,
+    .frozenPartySection h3,
+    .frozenPartySection img {
+      width: 100%;
+    }
+    .frozenPartySection button {
+      width: 60%;
+    }
+
+
+  .formWrapper img {display: none;}
+  .cardBenefit {width: 25%;}
   .cardBenefitWrapper {
-    width: 80rem;
-    margin: 2rem auto 0 auto;
+    width: 100%;
   }
   .formWrapper {
-    width: 80rem;
-    margin-left: 12rem;
+    width: 100%;
+    margin-left: 0;
   }
-  .balloonWrapper.first {
-    margin-left: 20rem;
-    margin-top: 7rem;
-  }
-  .balloonWrapper.second {
-    margin-left: 30rem;
-  }
-  .balloonWrapper.third {
-    margin-left: 40rem;
-  }
-  .balloonWrapper.forth {
-    margin-left: 50rem;
-  }
+
   .onlinePartySectionContentImg {
     margin-left: 2rem;
   }
@@ -582,54 +601,172 @@ h2 {
     margin-left: 5rem;
   }
   #Navburg {
-    display: none;
+    display: none !important;
   }
-  #burger-menu {
-    display: none;
-  }
+    #burger-menu {
+      display: none !important;
+    }
   }
 
-  @media screen and (max-width:1600px) {
-    .main {width: 1600px;}
-    .header {width: 1600px;}
-    .formSection {width: 1600px;}
-    .balloonWrapper.first {
-      margin-left: 15rem;
-      margin-top: 7rem;
-    }
-    .balloonWrapper.second {
-      margin-left: 25rem;
-    }
-    .balloonWrapper.third {
-      margin-left: 35rem;
-    }
-    .balloonWrapper.forth {
-      margin-left: 45rem;
-    }
-    .footer {width:1600px;}
-    
-  .formSection p {
-    text-align: center;
-    align-content: center;
+  @media screen and (max-width:940px) {
+    .partySection img.onlinePartySectionContentImg, .partySectionRight img.onlinePartySectionContentImgRight {
+      width: auto;
   }
-  .onlinePartySectionContentImg {
-    margin-left: 1rem;
-  }
+
+  .onlinePartySectionContent h3,
+  .onlinePartySectionContentRight h3,
+    .cardBenefit h3 {
+      font-size: 1rem;
+    }
+
+    .onlinePartySectionContent p,
+    .onlinePartySectionContentRight p {
+      font-size: 0.8rem;
+    }
+
+    .onlinePartySectionContent button,
+    .onlinePartySectionContentRight button {
+      width: 80%;
+    }
+
+    .partySectionRight {
+      width: 100%;
+    }
+
+    .onlinePartySectionContentImgRight {
+      width: auto;
+      height: auto;
+      margin-left: 15px;
+    }
+
+    .onlinePartySectionContentRight {
+      margin-left: 0; 
+      margin-right: 0; 
+      width: 50%;
+      height: auto;
+    }
+
+    .cardBenefit p {
+      font-size: 1.5rem;
+    }
+
+    .sectionNameRight h2,
+    .sectionName h2 {
+      font-size: 2rem;
+    }
+
+    .nav {
+      display: none;
+    }
   
-  .onlinePartySectionContentImgRight {
-    margin-left: 4rem;
+    #Navburg .logo {
+      margin-left: 1rem;
+    }
+    
+    #Navburg {
+      visibility: visible;
+      display: flex !important;
+      top: 1rem;
+        position: absolute;
+        width: 100%;
+    }
+  
+    #burger-menu {
+      position:absolute;
+      top: 0;
+      right: -100%;
+      display: block !important;
+    }
+    
+    #burger-menu.open {
+      right: 0;
+    }
+    
+    .burger {
+      width: 50px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: 0.5rem;
+      margin-top: 10px;
+    }
+  
+    .burger img {
+      width: 40px;
+      height: 40px;
+      padding-left: 5px;
+      padding-top: 5px;
+      cursor: pointer;
+    }
+    
+    .burger-close img {
+      margin-top: 1.75rem;
+      margin-left: 5.6rem;
+      width: 2.5rem;
+    height: auto;
+    cursor: pointer;
+    }
+
+    .mb-5 {
+      display: flex;  
+      margin-bottom: -1rem;
+    }
+    
+    .mb-5 p {
+      width: 2rem;
+        margin-top: 1.8rem;
+        margin-left: 0.9rem;
+        font-size: 2rem;
+    }
+    
+    #burger-menu {
+      background-color: seashell;
+      opacity: 92%;
+      padding-bottom: 1rem;
+    }
+    
+    .mt-4 a {
+      margin-left:1rem;
+    }
+    
+    .mb-4 {
+      margin:1rem;
+    }
+
+
+    .main {width: 100%;}
+    .header {width: 100%;}
+    .formSection {width: 100%;}
+    
+    .footer {width:100%;}
+    
+    .formSection p {
+      text-align: center;
+      align-content: center;
+    }
+    .onlinePartySectionContentImg {
+      margin-left: 1rem;
+    }
+    
+    .onlinePartySectionContentImgRight {
+      margin-left: 5px;
+    }
+
   }
-  #Navburg {
-    display: none;
-  }
-  #burger-menu {
-    display: none;
-  }
-  }
-  @media screen and (max-width:400px) {
+
+  @media screen and (max-width:705px) {
+    .animator-wrapper {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .animator-wrapper > * {
+      width: 100%;
+    }
+    
     .main {
       width: inherit;
       background: url(../img/BackMobile.png);
+      background-size: cover;
       padding-bottom: 1rem;
     }
     .mainPhrase {
@@ -641,9 +778,7 @@ h2 {
     .header {
       width: inherit;
       height: 660px;
-      background: url(../img/BackgroundOthers.png);}
-   .offer {
-     margin: -4rem 5rem auto 5rem;
+      background: url(../img/BackgroundOthers.png);
     }
     .offer h1 {
       width: auto;
@@ -656,13 +791,14 @@ h2 {
       font-size: 1rem;
     }
     .offer button {
-      width: 100%;
+      width: 60%;
       font-size: 1rem;
     }
 
 .cardBenefitWrapper {
   width: auto;
   flex-direction: column;
+  align-items: center;
 }
 .cardBenefit {
   width: 15rem;
@@ -684,12 +820,12 @@ font-size: 1.3rem;
   font-size: 1rem;
 }
 .phoneBackground {
-
-  margin-left: 20%;
+  margin: auto;
   width: 17rem;
   height: 20rem;
   background-size: contain;
   position: relative;
+  left: 25px;
 }
 .animator {
   margin: 0px;
@@ -701,12 +837,12 @@ font-size: 1.3rem;
 }
 
 .animator h3 {
-  width: 18rem;
+  width: 100%;
   font-size: 1.3rem;
 }
 
 .animator p {
-  width: 20rem;
+  width: 100%;
   font-size: 1rem;
 }
 
@@ -738,6 +874,15 @@ font-size: 1.3rem;
   margin-bottom: 0;
   display: block;
   width: auto;
+  margin-top: 5rem;
+}
+
+.partySection img {
+  height: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 70% !important;
+  margin-left: 15%;
 }
 
 .partySectionRight {
@@ -785,7 +930,7 @@ font-size: 1.3rem;
 .onlinePartySectionContentImgRight {
   margin-top: 0;
   margin-left: 0;
-  width: 70%;
+  width: 70% !important;
   margin-left: 15%;
 }
 
@@ -816,20 +961,6 @@ font-size: 1.3rem;
 #sec h2{
   font-size: 1.8rem;
   margin-left: 4rem;
-}
-
-.balloonWrapper.first {
-  margin-left: 2rem;
-  margin-top: 0.5rem;
-}
-.balloonWrapper.second {
-  margin-left: 2rem;
-}
-.balloonWrapper.third {
-  margin-left: 2rem;
-}
-.balloonWrapper.forth {
-  margin-left: 2rem;
 }
 
 .balloonWrapper img {
@@ -927,7 +1058,7 @@ font-size: 1.5rem;
 
 #Navburg {
   visibility: visible;
-  display: flex;
+  display: flex !important;
   top: 1rem;
     position: absolute;
     width: 100%;
@@ -964,7 +1095,7 @@ font-size: 1.5rem;
     position:absolute;
     top: 0;
     right: -100%;
-    display: block;
+    display: block !important;
   }
   
   #burger-menu.open {
@@ -993,9 +1124,6 @@ font-size: 1.5rem;
     width: 2.5rem;
   height: auto;
   cursor: pointer;
-  }
-  .body {
-    width: 400px;
   }
 
 .mb-5 {
