@@ -8,6 +8,11 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+.logo img {
+  top: 5px;
+  position: relative;
+}
+
 #Navburg {
   display: none;
 }
@@ -265,8 +270,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 17rem;
-  padding-top: 2rem;
-  margin: 2rem auto 0.75rem auto;
+  margin: 0 auto 0.75rem auto;
+  padding-top: 1rem;
 }
 
 @media screen and (max-width:1400px) {
@@ -313,7 +318,7 @@ h2 {
   }
   
   .card {
-    width: 80%;
+    width: 60%;
     margin-bottom: 2rem;
     margin-top: 2rem;
     border: 1px solid rgba(0,0,0,0.1);
@@ -321,6 +326,8 @@ h2 {
 .card h3 {
   padding-left: 1rem;
   font-size: 1.5rem;
+  margin: 25px auto;
+  width: 70%;
 }
   .card:last-child {
     margin-bottom: 5rem;
@@ -361,7 +368,8 @@ h2 {
   .sectionText {
     padding: 0 1.5rem 1rem 1.5rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
   }
 
   .sectionText div {

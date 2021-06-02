@@ -8,6 +8,11 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+.logo img {
+  top: 5px;
+  position: relative;
+}
+
 .selected-page {
   color: #FF27A9;
 }
@@ -56,6 +61,12 @@ h2 {
   padding-top: 6.25rem;
   padding-bottom: 5rem;
   background-size: cover;
+}
+
+.main > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav {
@@ -162,6 +173,7 @@ h2 {
   margin: -5rem auto 0 auto;
   color: rgba(113, 9, 180, 0.68);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5rem;
 }
 
 .cardBenefitWrapper {
@@ -174,7 +186,7 @@ h2 {
 .partySection img {
   width: auto;
     margin-left: auto;
-    margin-right: 5px;
+    margin-right: 3rem;
     height: fit-content;
 }
 
@@ -189,7 +201,7 @@ h2 {
   text-align: center;
   font-size: 2.25rem;
   padding: 3.125rem 0 0.4rem 0;
-  width: 13rem;
+  width: 100%;
   margin: 0 auto;
   color: rgba(113, 9, 180, 0.81);
   border-bottom: 1px solid #a212ff;
@@ -289,7 +301,7 @@ h2 {
 .onlinePartySectionContent p {
   text-align: left;
   font-size: 2rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .onlinePartySectionContent #free {
@@ -300,6 +312,7 @@ h2 {
 .onlinePartySectionContent h3 {
   text-align: center;
   font-size: 2rem;
+  margin-left: 3rem;
 }
 
 .onlinePartySectionContentRight {
@@ -327,12 +340,14 @@ h2 {
   width: 100%;
   text-align: left;
   font-size: 2rem;
+  margin-right: 3rem;
 }
 
 .onlinePartySectionContentRight h3 {
   width: 100%;
   text-align: center;
   font-size: 2rem;
+  margin-right: 3rem;
 }
 
 .onlinePartySectionContentRight button {
@@ -435,7 +450,7 @@ h2 {
   padding: 1rem 0 1rem 1rem;
   margin: 1rem;
   margin: 1rem 0;
-  width: 43%;
+  width: 42%;
 }
 
 .formWrapper textarea {
@@ -491,7 +506,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 17rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: 2rem auto 0.75rem auto;
 }
 
@@ -502,8 +517,16 @@ h2 {
   display: none !important;
 }
 
+.partySectionRight img.onlinePartySectionContentImgRight {
+  margin-left: 3rem;
+}
+
+.partySection img.onlinePartySectionContentImg {
+  margin-right: 3rem;
+}
+
 .partySection img.onlinePartySectionContentImg,
-.partySectionRight img.onlinePartySectionContentImgRight{
+.partySectionRight img.onlinePartySectionContentImgRight {
   width: 30%;
   height: fit-content;
 }
@@ -524,6 +547,35 @@ h2 {
 
 
 @media screen and (max-width:2000px) {
+  .header {
+    background-size: contain;
+    height: 60vw;
+  }
+  .main > * {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .offer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 30rem 0;
+
+    display: grid;
+    grid-template-columns: 27% auto 18%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .offer .text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .offer h1 {
+    margin-top: 10rem;
+  }
+
   .cardBenefit {width: 25%;}
   .cardBenefitWrapper {
     width: 100%;
@@ -567,8 +619,40 @@ h2 {
     display: none !important;
   }
 }
+@media screen and (max-width:1680px) {
+  .header {
+    padding-top: 25px;
+  }
+  .text h1 {
+    font-size: 62px;
+    margin-top: 10vw;
+  }
+  .text button {
+    width: 60%;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+}
 
   @media screen and (max-width:1200px) {
+    .mainPhrase {
+      margin-bottom: 2rem;;
+    }
+    .offer {
+      padding: 0;
+    }
+    .text h1 {
+      font-size: 48px;
+      margin-top: 5vw;
+    }
+    .offer p {
+      font-size: 1.5rem;
+    }
+    .text button {
+      width: 60%;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+  }
     .nav {
       width: 95%;
     }
@@ -609,9 +693,20 @@ h2 {
 }
 
   @media screen and (max-width:940px) {
+    .cardBenefit {
+      width: 23%;
+  }
+    .text h1 {
+      font-size: 36px;
+      margin-top: 0;
+    }
+    .text p, .text button {
+      font-size: 24px;
+      width: 70%;
+    }
     .partySection img.onlinePartySectionContentImg, .partySectionRight img.onlinePartySectionContentImgRight {
       width: auto;
-  }
+    }
 
   .onlinePartySectionContent h3,
   .onlinePartySectionContentRight h3,
@@ -754,6 +849,16 @@ h2 {
   }
 
   @media screen and (max-width:705px) {
+    .offer {
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      padding-bottom: 21rem;
+      width: 100%;
+    }
+    .offer .text {
+      padding: 0 3vw;
+    }
     .animator-wrapper {
       align-items: center;
       flex-direction: column;
@@ -924,14 +1029,14 @@ font-size: 1.3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 70%;
-  margin-left: 15%;
 }
 
 .onlinePartySectionContentImgRight {
   margin-top: 0;
   margin-left: 0;
   width: 70% !important;
-  margin-left: 15%;
+  margin-left: 15% !important;
+  margin-right: auto;
 }
 
 .onlinePartySectionContentRight {
@@ -1155,5 +1260,19 @@ font-size: 1.5rem;
 html {
   overflow-x: hidden;
 }
+}
+
+@media screen and (max-width:400px) {
+  .sectionName h2,
+  .sectionNameRight h2,
+  #sec h2 {
+    font-size: 1.5rem;
+  }
+  .onlinePartySectionContent h3,
+  .onlinePartySectionContent p,
+  .partySectionRight p,
+  .partySectionRight h3 {
+    margin: auto auto;
+  }
 }
 

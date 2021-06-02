@@ -8,6 +8,11 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+.logo img {
+  top: 5px;
+  position: relative;
+}
+
 #Navburg {
   display: none !important;
 }
@@ -71,6 +76,14 @@ h2 {
   padding-bottom: 5rem;
   margin-bottom: -7rem;
 }
+
+.main section.quest {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  width: 95%;
+}
+
 
 .nav {
   display: flex;
@@ -152,7 +165,7 @@ h2 {
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 2rem;
-  width: 100%;
+  width: 80%;
 }
 
 .makeOrder {
@@ -212,7 +225,7 @@ h2 {
 .firstimg,
 .secimg {
   width: 55%;
-  margin: auto;
+  margin: 0 auto;
 }
 .makeOrder span {
   color: #7109b4;
@@ -375,7 +388,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 17rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: 0 auto 0.75rem auto;
 }
 
@@ -417,6 +430,10 @@ h2 {
 }
 
 @media screen and (max-width:872px) {
+  .quest p {
+    font-size: 1.5rem;
+  }
+
   .slideshow-container .fade,
   .slideshow-container .fade img {
     width: 260px !important;

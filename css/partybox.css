@@ -10,9 +10,24 @@
   display: none !important;
 }
 
+.logo img {
+  top: 5px;
+  position: relative;
+}
+
 @font-face {
   font-family: GothamProBold;
   src: url(../fonts/GothamPro-Bold.ttf);
+}
+
+.container .requestPanel,
+.container .main {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.container .requestPanel {
+  margin-bottom: 5.1rem;
 }
 
 body {
@@ -40,6 +55,7 @@ body {
   background: url(../img/BackgroundOthers.png) no-repeat;
   background-size: cover;
   padding-top: 6.25rem;
+  height: auto !important;
 }
 
 .selected-page {
@@ -442,7 +458,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 17rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: 0 auto 0.75rem auto;
 }
 
@@ -492,7 +508,25 @@ hr {
   }
 }
 
+@media screen and (min-width: 1201px) {
+  .header {
+    background-size: cover !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-device-width:1200px) {
+  .header {
+    min-height: 60vw;
+    background-size: contain;
+    padding-top: 2rem;
+  }
+}
+
 @media screen and (max-width:872px) {
+  .previewText h1 {
+    padding-top: 5rem;
+  }
   .slideshow-container .fade,
   .slideshow-container .fade img {
     width: 260px !important;
@@ -638,6 +672,9 @@ hr {
 }
 
 @media screen and (max-width:705px) {
+  .container .requestPanel {
+    margin-top: 2rem;
+  }
   .prev, .next {
     cursor: pointer;
     top: 50%;
@@ -755,7 +792,7 @@ hr {
 
   .previewText h1 {
     font-size: 2rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   .previewText p {
@@ -963,6 +1000,13 @@ hr {
   
   html {
     overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .previewText p {
+    margin-bottom: 0rem;
+    padding-bottom: 3rem;
   }
 }
 

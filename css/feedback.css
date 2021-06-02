@@ -8,6 +8,11 @@
   src: url(../fonts/GothamPro-Bold.ttf);
 }
 
+.logo img {
+  top: 5px;
+  position: relative;
+}
+
 #Navburg {
   display: none;
 }
@@ -276,7 +281,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 17rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   margin: 2rem auto 0.75rem auto;
 }
 
@@ -343,7 +348,7 @@ p {
 }
 
 .quote {
-    margin: 5rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding: 1rem;
   }
 
@@ -369,8 +374,11 @@ p {
     margin-bottom: 8rem;
   }
 
-  .nameAndEmail,
-  .quoteBlocks .quote
+  .quoteBlocks .quote {
+    width: 60%;
+  }
+
+  .nameAndEmail
    {
     width: 90%;
   }
@@ -504,5 +512,11 @@ p {
     margin-bottom: 2rem;
     margin-left: 0.9rem;
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .formFeedback .button {
+    width: 60%;
   }
 }
