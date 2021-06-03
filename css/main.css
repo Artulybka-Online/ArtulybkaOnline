@@ -693,32 +693,32 @@ h2 {
 }
 
   @media screen and (max-width:940px) {
-    .text h1 {
+    .header .offer .text h1 {
       font-size: 25px;
       margin-top: 6rem;
       }
       
-      .text p, .text button {
+      .header .offer .text p, .header .offer .text button {
       font-size: 15px;
       width: 50%;
       }
       
-      .mainPhrase {
+      .header .offer .mainPhrase {
       font-size: 20px;}
-      .cardBenefit h3 {
+      .benefitsCardsSection .cardBenefit h3 {
       font-size: 1.5rem;}
       
     .cardBenefit {
       width: 23%;
   }
-    .text h1 {
+    /* .text h1 {
       font-size: 36px;
       margin-top: 0;
     }
     .text p, .text button {
       font-size: 24px;
       width: 70%;
-    }
+    } */
     .partySection img.onlinePartySectionContentImg, .partySectionRight img.onlinePartySectionContentImgRight {
       width: auto;
     }
