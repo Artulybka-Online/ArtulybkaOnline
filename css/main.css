@@ -848,6 +848,21 @@ h2 {
 
   }
 
+  @media screen and (min-width:706px) and (max-width:939px) {
+    .onlinePartySectionRight .partySectionRight {
+      align-items: flex-start;
+    }
+    .onlinePartySectionRight .partySectionRight .onlinePartySectionContentImgRight {
+      width: 40%;
+    }
+
+    .onlinePartySectionRight .partySectionRight .onlinePartySectionContentImgRight,
+    .onlinePartySectionRight .partySectionRight .onlinePartySectionContentRight {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @media screen and (max-width:705px) {
     .offer {
       justify-content: center;
@@ -947,8 +962,10 @@ font-size: 1.3rem;
 }
 
 .animator p {
-  width: 100%;
+  width: 80%;
   font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .onlinePartySection {

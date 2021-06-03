@@ -54,9 +54,13 @@ h2 {
 }
 
 hr {
-  border: 1px solid #ffffff;
-  width: 372px;
+  width: 100%;
+  margin: 0;
   margin-bottom: 1.6rem;
+  border: 0;
+  background: white;
+  height: 1px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 p {
@@ -462,7 +466,6 @@ p {
     
     #burger-menu.open {
       right: 0;
-      width: 60%;
     }
     
     .burger {
