@@ -693,6 +693,21 @@ h2 {
 }
 
   @media screen and (max-width:940px) {
+    .text h1 {
+      font-size: 25px;
+      margin-top: 6rem;
+      }
+      
+      .text p, .text button {
+      font-size: 15px;
+      width: 50%;
+      }
+      
+      .mainPhrase {
+      font-size: 20px;}
+      .cardBenefit h3 {
+      font-size: 1.5rem;}
+      
     .cardBenefit {
       width: 23%;
   }

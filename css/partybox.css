@@ -7,7 +7,7 @@
   display: none !important;
 }
 #burger-menu {
-  display: none !important;
+  display: none ;
 }
 
 .logo img {
@@ -523,6 +523,11 @@ hr {
   }
 }
 
+@media screen and (min-width:873px) {
+  #burger-menu {
+    display: none !important;
+}
+}
 @media screen and (max-width:872px) {
   .previewText h1 {
     padding-top: 5rem;
@@ -613,7 +618,7 @@ hr {
     position:absolute;
     top: 0;
     right: -100%;
-    display: block !important;
+    display: block ;
   }
   
   #burger-menu.open {
@@ -942,7 +947,7 @@ hr {
       position:absolute;
       top: 0;
       right: -100%;
-      display: block !important;
+      display: block ;
     }
     
     #burger-menu.open {
