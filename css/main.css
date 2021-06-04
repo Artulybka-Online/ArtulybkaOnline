@@ -912,7 +912,7 @@ h2 {
       font-weight: 300;}
     .header {
       width: inherit;
-      height: 660px;
+      height: 60vw;
       background: url(../img/BackgroundOthers.png);
     }
     .offer h1 {
@@ -1293,8 +1293,22 @@ html {
   overflow-x: hidden;
 }
 }
-
+@media screen and (max-width:500px) {
+  .header {
+    height: 80vw;
+  }
+}
 @media screen and (max-width:400px) {
+  .sectionNameRight h2 {
+    margin-top: 2.5rem;
+  }
+  .onlinePartySectionContent p,
+  .onlinePartySectionContentRight p {
+    margin-bottom: 20px !important;
+  }
+  .header {
+    height: 100vw;
+  }
   .sectionName h2,
   .sectionNameRight h2,
   #sec h2 {
