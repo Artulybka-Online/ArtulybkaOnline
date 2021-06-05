@@ -511,10 +511,10 @@ h2 {
 }
 
 #Navburg {
-  display: none !important;
+  display: none ;
 }
 #burger-menu {
-  display: none !important;
+  display: none ;
 }
 
 .partySectionRight img.onlinePartySectionContentImgRight {
@@ -613,10 +613,10 @@ h2 {
   }
 
   #Navburg {
-    display: none !important;
+    display: none ;
   }
   #burger-menu {
-    display: none !important;
+    display: none ;
   }
 }
 @media screen and (max-width:1680px) {
@@ -685,10 +685,10 @@ h2 {
     margin-left: 5rem;
   }
   #Navburg {
-    display: none !important;
+    display: none ;
   }
     #burger-menu {
-      display: none !important;
+      display: none ;
     }
 }
 
@@ -775,7 +775,7 @@ h2 {
     
     #Navburg {
       visibility: visible;
-      display: flex !important;
+      display: flex ;
       top: 1rem;
         position: absolute;
         width: 100%;
@@ -785,7 +785,7 @@ h2 {
       position:absolute;
       top: 0;
       right: -100%;
-      display: block !important;
+      display: block ;
     }
     
     #burger-menu.open {
@@ -822,7 +822,7 @@ h2 {
     }
     
     .mb-5 p {
-      width: 2rem;
+        width: auto;
         margin-top: 1.8rem;
         margin-left: 0.9rem;
         font-size: 2rem;
@@ -861,6 +861,12 @@ h2 {
       margin-left: 5px;
     }
 
+  }
+
+  @media screen and (min-width:873px) {
+    #burger-menu {
+      display: none !important;
+    }
   }
 
   @media screen and (min-width:706px) and (max-width:939px) {
@@ -1195,7 +1201,7 @@ font-size: 1.5rem;
 
 #Navburg {
   visibility: visible;
-  display: flex !important;
+  display: flex ;
   top: 1rem;
     position: absolute;
     width: 100%;
@@ -1232,7 +1238,7 @@ font-size: 1.5rem;
     position:absolute;
     top: 0;
     right: -100%;
-    display: block !important;
+    display: block ;
   }
   
   #burger-menu.open {
@@ -1269,7 +1275,7 @@ font-size: 1.5rem;
 }
 
 .mb-5 p {
-  width: 2rem;
+    width: auto;
     margin-top: 1.8rem;
     margin-left: 0.9rem;
     font-size: 2rem;

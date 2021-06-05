@@ -14,10 +14,10 @@
 }
 
 #Navburg {
-  display: none !important;
+  display: none ;
 }
 #burger-menu {
-  display: none !important;
+  display: none ;
 }
 
 .selected-page {
@@ -446,7 +446,7 @@ h2 {
   }
 
   #burger-menu {
-    display: block !important;
+    display: block ;
   }
 
   #Navburg .logo {
@@ -464,7 +464,7 @@ h2 {
 
   #Navburg {
     visibility: visible;
-    display: flex !important;
+    display: flex ;
     top: 1rem;
     position: absolute;
     width: 100%;
@@ -509,7 +509,7 @@ h2 {
   
   #Navburg {
     visibility: visible;
-    display: flex !important;
+    display: flex ;
     top: 1rem;
       position: absolute;
       width: 100%;
@@ -519,7 +519,7 @@ h2 {
     position:absolute;
     top: 0;
     right: -100%;
-    display: block !important;
+    display: block ;
   }
   
   #burger-menu.open {
@@ -556,7 +556,7 @@ h2 {
   }
   
   .mb-5 p {
-    width: 2rem;
+      width: auto;
       margin-top: 1.8rem;
       margin-left: 0.9rem;
       font-size: 2rem;
@@ -574,6 +574,12 @@ h2 {
   
   .mb-4 {
     margin:1rem;
+  }
+}
+
+@media screen and (min-width:873px) {
+  #burger-menu {
+    display: none !important;
   }
 }
 
@@ -720,7 +726,7 @@ h2 {
   
   #Navburg {
     visibility: visible;
-    display: flex !important;
+    display: flex ;
     top: 1rem;
       position: absolute;
       width: 100%;
@@ -757,7 +763,7 @@ h2 {
       position:absolute;
       top: 0;
       right: -100%;
-      display: block !important;
+      display: block ;
     }
     
     #burger-menu.open {
@@ -794,7 +800,7 @@ h2 {
   }
   
   .mb-5 p {
-    width: 2rem;
+      width: auto;
       margin-top: 1.8rem;
       margin-left: 0.9rem;
       font-size: 2rem;

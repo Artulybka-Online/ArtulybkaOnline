@@ -310,6 +310,12 @@ p {
   }
 }
 
+@media screen and (min-width:873px) {
+  #burger-menu {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width:872px) {
   .header {
     background-size: auto;
@@ -510,7 +516,7 @@ p {
   }
 
   .mb-5 p {
-    width: 2rem;
+    width: auto;
     margin-top: 1.8rem;
     margin-bottom: 2rem;
     margin-left: 0.9rem;

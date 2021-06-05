@@ -573,7 +573,7 @@ padding-top: 0%;
   
   #Navburg {
     visibility: visible;
-    display: flex !important;
+    display: flex ;
     top: 1rem;
       position: absolute;
       width: 100%;
@@ -583,7 +583,7 @@ padding-top: 0%;
     position:absolute;
     top: 0;
     right: -100%;
-    display: block !important;
+    display: block ;
   }
   
   #burger-menu.open {
@@ -638,6 +638,12 @@ padding-top: 0%;
   
   .mb-4 {
     margin:1rem;
+  }
+}
+
+@media screen and (min-width:873px) {
+  #burger-menu {
+    display: none !important;
   }
 }
 
